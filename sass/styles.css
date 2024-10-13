@@ -1,0 +1,2784 @@
+@font-face {
+  font-family: "BigNoodleTitling";
+  src: url("/assets/fonts/BigNoodleTitling/BigNoodleTitling-Oblique.woff2") format("woff2"), url("/assets/fonts/BigNoodleTitling/BigNoodleTitling-Oblique.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Futura Std Book";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Book"), url("/assets/fonts/Futura/FuturaStdBook.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Book Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Book Oblique"), url("/assets/fonts/Futura/FuturaStdBookOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Light Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light Condensed"), url("/assets/fonts/Futura/FuturaStdCondensedLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light"), url("/assets/fonts/Futura/FuturaStdLight.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Light Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light Condensed Oblique"), url("/assets/fonts/Futura/FuturaStdCondensedLightObl.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Light Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Light Oblique"), url("/assets/fonts/Futura/FuturaStdLightOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Medium Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium Condensed"), url("/assets/fonts/Futura/FuturaStdCondensed.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Medium";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium"), url("/assets/fonts/Futura/FuturaStdMedium.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Medium Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium Condensed Oblique"), url("/assets/fonts/Futura/FuturaStdCondensedOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Medium Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Medium Oblique"), url("/assets/fonts/Futura/FuturaStdMediumOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Heavy";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Heavy"), url("/assets/fonts/Futura/FuturaStdHeavy.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Heavy Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Heavy Oblique"), url("/assets/fonts/Futura/FuturaStdHeavyOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold"), url("/assets/fonts/Futura/FuturaStdBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold Condensed"), url("/assets/fonts/Futura/FuturaStdCondensedBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold Oblique"), url("/assets/fonts/Futura/FuturaStdBoldOblique.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Bold Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Bold Condensed Oblique"), url("/assets/fonts/Futura/FuturaStdCondensedBoldObl.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Extra Bold Condensed";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold Condensed"), url("/assets/fonts/Futura/FuturaStdCondensedExtraBd.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Extra Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold"), url("/assets/fonts/Futura/FuturaStdExtraBold.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Extra Bold Condensed Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold Condensed Oblique"), url("/assets/fonts/Futura/FuturaStdCondExtraBoldObl.woff") format("woff");
+}
+@font-face {
+  font-family: "Futura Std Extra Bold Oblique";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura Std Extra Bold Oblique"), url("/assets/fonts/Futura/FuturaStdExtraBoldOblique.woff") format("woff");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8A8A8A;
+}
+
+a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.3s ease;
+}
+
+.hamburger {
+  display: none;
+}
+
+.header {
+  padding: 2.5rem 6.25rem 0rem 6.25rem;
+}
+.header #navbar {
+  width: 100%;
+  align-items: center;
+}
+.header #logo-container {
+  display: flex;
+  width: 50%;
+  align-items: center;
+  justify-content: left;
+}
+.header #logo-icons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 6.25rem;
+}
+.header .images {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: visible;
+}
+.header #icons {
+  display: flex;
+  gap: 3rem;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.header #empty {
+  height: 100%;
+  width: 100%;
+}
+.header #logo-crop {
+  width: 100%;
+  height: 6.25rem;
+  min-width: 13.75rem;
+  max-width: 25rem;
+}
+.header .icon-crop {
+  min-width: 1.25rem;
+  max-width: 1.8rem;
+  max-height: 1.8rem;
+  overflow: hidden;
+}
+@media only screen and (max-width: 1100px) {
+  .header {
+    padding: 1rem 6.25rem 0rem 3.25rem;
+  }
+  .header #icons {
+    gap: 1.5rem;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .header {
+    padding: 1rem 3.25rem 0rem 0rem;
+  }
+  .header #icons {
+    gap: 1.5rem;
+  }
+}
+
+.bar {
+  display: block;
+  min-width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: #F4CE18;
+}
+@media only screen and (max-width: 500px) {
+  .bar {
+    min-width: 20px;
+    height: 2px;
+    margin: 4px auto;
+  }
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem 1rem 1rem;
+}
+@media only screen and (max-width: 1100px) {
+  .nav-menu {
+    margin-top: 1.875rem;
+  }
+}
+.nav-menu.active {
+  left: 0;
+}
+
+.nav-item {
+  background-color: #F4CE18;
+  font-size: 1.625rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 100%;
+  max-width: 12.5rem;
+  min-width: 5.9375rem;
+}
+.nav-item .dropdown-menu {
+  display: none;
+  position: absolute;
+  width: 5.9em;
+  top: 4.25em;
+  background-color: #F4CE18;
+  border-radius: 0.625rem;
+  box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+.nav-item:hover .dropdown-menu {
+  display: block;
+}
+.nav-item:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 1100px) {
+  .nav-item {
+    margin: 0.5rem auto 0.5rem auto;
+  }
+  .nav-item:hover .dropdown-menu {
+    display: none;
+  }
+}
+
+.nav-link {
+  width: 100%;
+  height: 100%;
+  font-family: "BigNoodleTitling";
+  font-size: clamp(1rem, 1vw, 1.625rem);
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+#container-6 {
+  margin-top: 3vw;
+  font-family: "Futura Std Heavy";
+}
+#container-6 #container-6-1 {
+  width: 100%;
+  height: 11.11vw;
+  display: flex;
+  justify-content: center;
+}
+#container-6 #container-6-1 #container-6-1-1 {
+  height: auto;
+  width: 28vw;
+  background-image: url("/assets/Logo, Icons & Gates/Logo-H.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-1 #container-6-1-1 {
+    width: 38vw;
+  }
+}
+#container-6 #container-6-2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#container-6 #container-6-2 ul {
+  display: flex;
+  list-style: none;
+  gap: 1vw;
+}
+#container-6 #container-6-2 ul .rectangle {
+  width: 0.2vw;
+  height: 2vw;
+  background-color: #F4CE18;
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-2 ul .rectangle {
+    width: 0.3vw;
+    height: 2.5vw;
+  }
+}
+#container-6 #container-6-2 ul li {
+  font-size: 1.5vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-2 ul li {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-6 #container-6-2 ul li {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-2 ul {
+    gap: 1vw;
+  }
+}
+#container-6 #container-6-3 {
+  display: flex;
+  justify-content: center;
+  gap: 5vw;
+  padding-top: 2vw;
+  font-size: 1.5vw;
+}
+#container-6 #container-6-3 #container-6-3-1 {
+  height: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-3 #container-6-3-1 {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-6 #container-6-3 #container-6-3-1 {
+    font-size: 2.5vw;
+  }
+}
+#container-6 #container-6-3 #container-6-3-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-3 #container-6-3-2 {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-6 #container-6-3 #container-6-3-2 {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 #container-6-3 {
+    gap: 8vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-6 {
+    height: 28vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-6 {
+    height: 35vw;
+  }
+}
+
+#banner {
+  margin-top: 1.875rem;
+  width: 100%;
+  height: 16.625rem;
+  background-image: url("/assets/home/Home-Gate-Pic1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#banner #title {
+  height: 40%;
+  color: #F4CE18;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#banner #title h1 {
+  font-family: "Futura Std Light";
+  font-size: 1.5vw;
+  letter-spacing: 0.6vw;
+}
+@media only screen and (max-width: 500px) {
+  #banner #title h1 {
+    font-size: 2.6vw;
+  }
+}
+#banner #banner-text-container {
+  height: 60%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: top;
+}
+#banner #banner-text {
+  width: 60%;
+  text-align: center;
+}
+#banner #banner-text p {
+  font-size: 2.3vw;
+  font-family: "Futura Std Medium";
+}
+@media only screen and (max-width: 500px) {
+  #banner #banner-text p {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #banner {
+    height: 10.625rem;
+    margin-top: 0;
+  }
+  #banner #banner-text {
+    width: 80%;
+  }
+}
+
+#container-1 {
+  width: 100%;
+  height: 8.2vw;
+  background-color: #1E201D;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 10.44vw 0 10.44vw;
+}
+#container-1 #container-1-1 {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+}
+#container-1 #rectangle {
+  width: 1vw;
+  height: 2.8vw;
+  background-color: #F4CE18;
+}
+#container-1 p {
+  margin: 0.11vw 0 0 1.11vw;
+  font-family: "Futura Std Light";
+  font-size: 1.3vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-1 {
+    height: 15vw;
+  }
+  #container-1 p {
+    font-size: 2vw;
+    width: 80vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-1 {
+    height: 20vw;
+  }
+  #container-1 p {
+    font-size: 2.5vw;
+  }
+}
+
+#container-2 {
+  padding: 3.44vw 5.44vw 0 5.44vw;
+  width: 100%;
+  display: flex;
+}
+#container-2 #text {
+  width: 50%;
+  color: #F4CE18;
+}
+#container-2 #text h2 {
+  font-family: "Futura Std Bold";
+  font-size: 4vw;
+}
+#container-2 #text #section {
+  display: flex;
+  flex-direction: column;
+  gap: 4.4vw;
+  padding: 0 8vw 0 0;
+}
+#container-2 #text #section ul {
+  padding-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 4.4vw;
+}
+#container-2 #text #section li {
+  color: #1E201D;
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+}
+#container-2 #text #section li span {
+  font-family: "Futura Std Heavy";
+}
+@media only screen and (max-width: 1100px) {
+  #container-2 #text #section {
+    padding: 0 5.5vw 0 0;
+    gap: 1.5vw;
+  }
+  #container-2 #text #section li {
+    font-size: 2vw;
+  }
+  #container-2 #text #section ul {
+    gap: 1.5vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-2 #text #section {
+    padding: 0 5.5vw 0 0;
+    gap: 1.5vw;
+  }
+  #container-2 #text #section li {
+    font-size: 2.5vw;
+  }
+  #container-2 #text #section ul {
+    gap: 1.5vw;
+  }
+}
+#container-2 #gates {
+  height: auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 3vw;
+}
+#container-2 #gates #aux {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 1.5vw 1.11vw 0;
+}
+#container-2 #gates .card-1 {
+  height: 20vw;
+  background-image: url("/assets/home/Home-Gate-Pic2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+@media only screen and (max-width: 1100px) {
+  #container-2 #gates .card-1 {
+    height: 22vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-2 #gates .card-1 {
+    height: 29vw;
+  }
+}
+#container-2 #gates .card-2 {
+  background-color: #FEE77C;
+  height: 20vw;
+  background-image: url("/assets/home/Home-Gate-Pic3.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+@media only screen and (max-width: 1100px) {
+  #container-2 #gates .card-2 {
+    height: 22vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-2 #gates .card-2 {
+    height: 29vw;
+  }
+}
+#container-2 #gates .new {
+  color: #F4CE18;
+  font-family: "Futura Std Extra Bold";
+  background-color: #1E201D;
+  width: 10vw;
+  height: 4vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 0 0 1.5vw;
+  border-radius: 0 0 5.55vw 0;
+  font-size: 1.5vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-2 #gates .new {
+    font-size: 2vw;
+    width: 12vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-2 #gates .new {
+    font-size: 2.5vw;
+    width: 15vw;
+    height: 5vw;
+  }
+}
+#container-2 #gates .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura Std Heavy";
+  font-size: 1.2vw;
+  width: 12vw;
+  height: 2.5vw;
+  border-radius: 0.5vw;
+  background-color: #F4CE18;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  #container-2 #gates .button {
+    height: 4vw;
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-2 #gates .button {
+    height: 4vw;
+  }
+}
+#container-2 #gates .button:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 1100px) {
+  #container-2 {
+    padding: 4.44vw 5.44vw 0 5.44vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-2 {
+    padding: 4.44vw 6.44vw 0 6.44vw;
+  }
+}
+
+#container-3 {
+  padding: 2vw 5.44vw 4.44vw 5.44vw;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+#container-3 h2 {
+  font-family: "Futura Std Bold";
+  font-size: 4vw;
+  color: #F4CE18;
+}
+#container-3 #container-3-1 {
+  height: auto;
+  display: flex;
+  gap: 1.3vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-1 {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-1 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-1-1 {
+  padding: 1.5vw;
+  background-color: #1E201D;
+  border-radius: 0.55vw;
+  color: #fff;
+  font-family: "Futura Std Light";
+  font-size: 1.5vw;
+  width: 48.2%;
+}
+#container-3 #container-3-1-1 h3 {
+  color: #F4CE18;
+  font-family: "Futura Std Book";
+  font-size: 2vw;
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-1-1 h3 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-1-1 span {
+  font-family: "Futura Std Book";
+}
+#container-3 #container-3-1-1 ul {
+  padding-left: 2.5vw;
+}
+#container-3 #container-3-1-1 ul li {
+  padding-left: 0px;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-1-1 {
+    font-size: 2vw;
+    border-radius: 1.5vw;
+    padding: 3vw;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-1-1 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-1-2 {
+  display: flex;
+  width: 50%;
+  gap: 1.3vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-1-2 {
+    flex-direction: row;
+    width: 100%;
+  }
+}
+#container-3 #container-3-1-2-1 {
+  border-radius: 0.55vw;
+  height: auto;
+  width: 50%;
+  background-color: #F4CE18;
+  background-image: url("/assets/home/Home-Gate-Pic8.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-1-2-1 {
+    font-size: 2vw;
+    border-radius: 1.5vw;
+    padding: 2vw;
+    background-position: center center;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-1-2-1 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-1-2-2 {
+  border-radius: 0.55vw;
+  height: auto;
+  width: 50%;
+  padding: 3vw;
+  background-color: #1E201D;
+  border-radius: 0.55vw;
+  color: #fff;
+  font-family: "Futura Std Light";
+  font-size: 1.5vw;
+}
+#container-3 #container-3-1-2-2 h3 {
+  color: #F4CE18;
+  font-family: "Futura Std Book";
+  font-size: 2vw;
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-1-2-2 h3 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-1-2-2 span {
+  font-family: "Futura Std Book";
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-1-2-2 {
+    font-size: 2vw;
+    border-radius: 1.5vw;
+    padding: 3vw;
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-1-2-2 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-2 {
+  display: flex;
+  gap: 1.3vw;
+}
+#container-3 #container-3-2 #container-3-2-1 {
+  height: 60vw;
+  border-radius: 0.55vw;
+  width: 48.2%;
+  background-color: #1E201D;
+  padding: 1.5vw;
+  color: #fff;
+  font-family: "Futura Std Light";
+  font-size: 1.5vw;
+}
+#container-3 #container-3-2 #container-3-2-1 h3 {
+  color: #F4CE18;
+  font-size: 2vw;
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-2 #container-3-2-1 h3 {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-2 #container-3-2-1 #container-3-2-1-1 {
+  height: 25%;
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-2 #container-3-2-1 #container-3-2-1-1 {
+    margin-bottom: 2.5vw;
+  }
+}
+#container-3 #container-3-2 #container-3-2-1 #container-3-2-1-2 {
+  height: 25%;
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-2 #container-3-2-1 #container-3-2-1-2 {
+    margin-bottom: 2.5vw;
+  }
+}
+#container-3 #container-3-2 #container-3-2-1 #container-3-2-1-3 {
+  height: 25%;
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-2 #container-3-2-1 #container-3-2-1-3 {
+    margin-bottom: 2.5vw;
+  }
+}
+#container-3 #container-3-2 #container-3-2-1 #container-3-2-1-4 {
+  height: 25%;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-2 #container-3-2-1 {
+    font-size: 2vw;
+    border-radius: 1.5vw;
+    padding: 3vw;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-2 #container-3-2-1 {
+    height: auto;
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-2 #container-3-2-2 {
+  border-radius: 0.55vw;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+#container-3 #container-3-2 #container-3-2-2 #container-3-2-2-1 {
+  background-image: url("/assets/home/Home-Gate-Pic9.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  height: 50%;
+  border-radius: 0.55vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-2 #container-3-2-2 #container-3-2-2-1 {
+    border-radius: 1.5vw;
+    width: 50%;
+    height: auto;
+  }
+}
+#container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 {
+  height: auto;
+}
+#container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 h2 {
+  font-family: "Futura Std Bold";
+  font-size: 4vw;
+  color: #F4CE18;
+  margin-bottom: 0.55vw;
+}
+#container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 ol {
+  padding-left: 2.5vw;
+  gap: 1.11vw;
+}
+#container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 li {
+  color: #1E201D;
+  font-size: 1.5vw;
+  font-family: "Futura Std Heavy";
+  margin-bottom: 1.11vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 li {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 li {
+    font-size: 2.5vw;
+  }
+}
+#container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 li span {
+  font-family: "Futura Std Light";
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-2 #container-3-2-2 #container-3-2-2-2 {
+    width: 75%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-2 #container-3-2-2 {
+    width: 100%;
+  }
+}
+#container-3 #container-3-2 #aux {
+  display: flex;
+  height: auto;
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 #container-3-2 {
+    flex-direction: column;
+  }
+  #container-3 #container-3-2 #aux2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    gap: 3vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-3 {
+    padding: 4.44vw 5.44vw 0 5.44vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-3 {
+    padding: 4.44vw 6.44vw 0 6.44vw;
+  }
+}
+
+#container-4 {
+  height: auto;
+  padding: 2vw 0 4.44vw 0;
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+}
+#container-4 h2 {
+  font-family: "Futura Std Heavy";
+  font-size: 4vw;
+  color: #F4CE18;
+  padding-left: 1.5vw;
+}
+#container-4 #container-4-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 50%;
+}
+#container-4 #container-4-1 #container-4-1-1 {
+  display: flex;
+  align-items: center;
+  height: 15vw;
+  background-color: #1E201D;
+  padding-left: 5.44vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-4 #container-4-1 #container-4-1-1 {
+    padding-left: 4.44vw;
+  }
+}
+#container-4 #container-4-1 #container-4-1-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5.44vw;
+  padding-top: 2.5vw;
+}
+#container-4 #container-4-1 #container-4-1-2 ul {
+  padding-left: 3vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5vw;
+}
+#container-4 #container-4-1 #container-4-1-2 li {
+  color: #1E201D;
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+}
+@media only screen and (max-width: 1100px) {
+  #container-4 #container-4-1 #container-4-1-2 {
+    padding-left: 6.44vw;
+  }
+  #container-4 #container-4-1 #container-4-1-2 li {
+    font-size: 1.9vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-4 #container-4-1 #container-4-1-2 li {
+    font-size: 2.5vw;
+  }
+}
+#container-4 #container-4-2 {
+  height: auto;
+  width: 50%;
+  padding-right: 5.44vw;
+}
+#container-4 #container-4-2 #card {
+  height: 100%;
+  background-image: url("/assets/home/Home-Gate-Pic6.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  border-radius: 0 2vw 0 0;
+}
+#container-4 #container-4-2 #aux {
+  display: flex;
+  flex-direction: column;
+}
+#container-4 #container-4-2 #aux #new {
+  color: #F4CE18;
+  font-family: "Futura Std Extra Bold";
+  background-color: #1E201D;
+  width: 12.5vw;
+  height: 6vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 0 0 1.5vw;
+  border-radius: 0 0 4.55vw 0;
+  font-size: 3vw;
+}
+#container-4 #container-4-2 #aux #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding: 0 0 1.11vw 1.5vw;
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+}
+#container-4 #container-4-2 #aux #text h3 {
+  font-size: 3vw;
+  font-family: "Futura Std Heavy";
+  color: #F4CE18;
+}
+@media only screen and (max-width: 500px) {
+  #container-4 #container-4-2 #aux #text h3 {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-4 #container-4-2 #aux #text {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-4 #container-4-2 #aux #text {
+    font-size: 2.5vw;
+  }
+}
+#container-4 #container-4-2 #aux2 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 1.5vw 1.11vw 0;
+}
+#container-4 #container-4-2 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura Std Heavy";
+  font-size: 1.5vw;
+  width: 12.8vw;
+  height: 3.22vw;
+  border-radius: 0.6vw;
+  background-color: #F4CE18;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  #container-4 #container-4-2 .button {
+    height: 4vw;
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-4 #container-4-2 .button {
+    height: 6vw;
+    font-size: 2.5vw;
+    border-radius: 1vw;
+  }
+}
+#container-4 #container-4-2 .button:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 1100px) {
+  #container-4 #container-4-2 {
+    padding-right: 6.44vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-4 #container-4-2 {
+    font-size: 2.5vw;
+  }
+}
+
+#container-5 {
+  height: 14vw;
+  width: 100%;
+  background-image: url("/assets/home/Home-Gate-Pic7.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#yellow-rectangle {
+  margin-top: 3vw;
+  height: 2vw;
+  width: 100%;
+  background-color: #F4CE18;
+}
+
+#container-7 {
+  background-color: #1E201D;
+  width: 100%;
+  display: flex;
+  height: 28vw;
+  justify-content: center;
+  padding: 2.5vw 0 0 0;
+}
+#container-7 .aux {
+  height: 20vw;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#container-7 #container-7-1 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 7vw;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(204, 204, 204);
+  border-radius: 100%;
+}
+#container-7 #container-7-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 1.5vw;
+}
+#container-7 #container-7-2 #container-7-2-1 {
+  color: #F4CE18;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#container-7 #container-7-2 #container-7-2-1 h1 {
+  font-family: "Futura Std Light";
+  font-size: 1.2vw;
+  letter-spacing: 0.6vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-7 #container-7-2 #container-7-2-1 h1 {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-7 #container-7-2 #container-7-2-1 h1 {
+    font-size: 2.5vw;
+  }
+}
+#container-7 #container-7-2 #container-7-2-2 {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  width: 80%;
+}
+#container-7 #container-7-2 #container-7-2-2 p {
+  font-size: 2vw;
+  font-family: "Futura Std Medium";
+}
+@media only screen and (max-width: 1100px) {
+  #container-7 #container-7-2 #container-7-2-2 p {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-7 #container-7-2 #container-7-2-2 p {
+    font-size: 3.5vw;
+  }
+}
+#container-7 #container-7-2 #container-7-2-3 {
+  height: 0.25vw;
+  width: 90%;
+  background-color: #F4CE18;
+  display: flex;
+}
+#container-7 #container-7-2 #container-7-2-4 {
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-7 #container-7-2 #container-7-2-4 {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-7 #container-7-2 #container-7-2-4 {
+    font-size: 2.5vw;
+    width: 200%;
+  }
+}
+#container-7 #container-7-3 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  margin-top: 7vw;
+  background-color: rgb(204, 204, 204);
+  border-radius: 100%;
+}
+@media only screen and (max-width: 1100px) {
+  #container-7 {
+    height: 35vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-7 {
+    height: 45vw;
+    padding: 4vw 5.44vw 0 5.44vw;
+  }
+}
+
+.container-8 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5.44vw;
+  padding: 2.5vw 5.44vw 0 5.44vw;
+}
+.container-8 .gate {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container-8 #gate-1 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic3.webp");
+}
+.container-8 #gate-2 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic4.jpg");
+}
+.container-8 #gate-3 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic5.jpg");
+}
+.container-8 #gate-4 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic6.jpg");
+}
+.container-8 #gate-5 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic7.jpg");
+}
+.container-8 #gate-6 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic8.jpg");
+}
+.container-8 #gate-7 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic9.jpg");
+}
+.container-8 #gate-8 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic10.jpg");
+}
+.container-8 #gate-9 {
+  background-image: url("/assets/driveway_gates/DG-Gate-Pic11.jpg");
+}
+.container-8 .card {
+  height: 30vw;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.container-8 .card .gate {
+  height: 50%;
+  width: 100%;
+  border-radius: 1.11vw;
+  border: 0.17vw solid #1E201D;
+}
+.container-8 .card .text {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-8 .card h3 {
+  font-family: "Futura Std Bold";
+  color: #F4CE18;
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+@media only screen and (max-width: 1100px) {
+  .container-8 .card h3 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-8 .card h3 {
+    font-size: 2.5vw;
+  }
+}
+.container-8 .card p {
+  font-family: "Futura Std Book";
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+@media only screen and (max-width: 1100px) {
+  .container-8 .card p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-8 .card p {
+    font-size: 2.5vw;
+  }
+}
+.container-8 .card .aux {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.container-8 .card .button {
+  margin-top: 0.55vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura Std Heavy";
+  font-size: 1.11vw;
+  width: 12.8vw;
+  height: 3.22vw;
+  border-radius: 0.6vw;
+  background-color: #F4CE18;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  .container-8 .card .button {
+    height: 3.5vw;
+    font-size: 1.7vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-8 .card .button {
+    height: 5vw;
+    font-size: 2.5vw;
+    width: 20vw;
+  }
+}
+.container-8 .card .button:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 1100px) {
+  .container-8 .card {
+    height: 42vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-8 .card {
+    height: 45vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-8 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#container-9 {
+  height: 50vw;
+  width: 100%;
+  display: flex;
+  gap: 1.3vw;
+  padding: 2.5vw 0 0 5.44vw;
+}
+#container-9 #container-9-1 {
+  height: 100%;
+  width: 50%;
+}
+#container-9 #container-9-1 #card {
+  height: 100%;
+  background-image: url("/assets/driveway_gates/Premium-Metal-Driveway-Gates-Dover-Design-Black-C 2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: bottom;
+  border-radius: 0 2vw 0 0;
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-1 #card {
+    background-position: center;
+  }
+}
+#container-9 #container-9-1 #aux {
+  display: flex;
+  flex-direction: column;
+}
+#container-9 #container-9-1 #aux #new {
+  color: #F4CE18;
+  font-family: "Futura Std Extra Bold";
+  background-color: #1E201D;
+  width: 12.5vw;
+  height: 6vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 0 0 1.5vw;
+  border-radius: 0 0 4.55vw 0;
+  font-size: 3vw;
+}
+#container-9 #container-9-1 #aux #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding: 0 0 1.11vw 1.5vw;
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+  color: #fff;
+}
+#container-9 #container-9-1 #aux #text h3 {
+  font-size: 3vw;
+  font-family: "Futura Std Heavy";
+  color: #F4CE18;
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-1 #aux #text h3 {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-9 #container-9-1 #aux #text {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-1 #aux #text {
+    font-size: 2.5vw;
+  }
+}
+#container-9 #container-9-1 #aux2 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 1.5vw 1.11vw 0;
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-1 #aux2 {
+    padding: 0 6vw 4vw 0;
+  }
+}
+#container-9 #container-9-1 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura Std Heavy";
+  font-size: 1.5vw;
+  width: 12.8vw;
+  height: 3.22vw;
+  border-radius: 0.6vw;
+  background-color: #F4CE18;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  #container-9 #container-9-1 .button {
+    height: 4vw;
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-1 .button {
+    height: 6vw;
+    width: 20vw;
+    font-size: 2.5vw;
+  }
+}
+#container-9 #container-9-1 .button:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-1 {
+    width: 100%;
+  }
+}
+#container-9 #container-9-2 {
+  height: auto;
+  width: 50%;
+  height: 100%;
+}
+#container-9 #container-9-2 #container-9-2-1 {
+  height: 6vw;
+  padding-right: 5.44vw;
+  padding-left: 1vw;
+  width: 100%;
+  background-color: #1E201D;
+  display: flex;
+  align-items: center;
+}
+#container-9 #container-9-2 #container-9-2-1 h2 {
+  font-family: "Futura Std Heavy";
+  font-size: 4vw;
+  color: #F4CE18;
+  padding-left: 1.5vw;
+}
+#container-9 #container-9-2 #container-9-2-2 ul {
+  padding-top: 1.9vw;
+  padding-left: 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 1.5vw;
+  -moz-column-gap: 1.9vw;
+       column-gap: 1.9vw;
+  width: 100%;
+}
+@media only screen and (max-width: 1100px) {
+  #container-9 #container-9-2 #container-9-2-2 ul {
+    row-gap: 0.8vw;
+    -moz-column-gap: 3vw;
+         column-gap: 3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-2 #container-9-2-2 ul {
+    padding-left: 6vw;
+  }
+}
+#container-9 #container-9-2 #container-9-2-2 li {
+  color: #1E201D;
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+}
+@media only screen and (max-width: 1100px) {
+  #container-9 #container-9-2 #container-9-2-2 li {
+    font-size: 1.6vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-2 #container-9-2-2 li {
+    font-size: 2vw;
+    font-family: "Futura Std Book";
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-9 #container-9-2 {
+    width: 100%;
+    margin-top: 3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-9 {
+    flex-direction: column;
+    height: 100vw;
+    padding: 5vw 5.44vw 0 5.44vw;
+  }
+}
+
+#container-10 {
+  background-image: url("/assets/garden_gates/home_banner_2-min 1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  display: flex;
+  padding: 2.5vw;
+  height: 27vw;
+}
+#container-10 #container-10-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  gap: 1vw;
+}
+#container-10 #container-10-1-1 {
+  color: #F4CE18;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#container-10 #container-10-1-1 h1 {
+  font-family: "Futura Std Light";
+  font-size: 1.2vw;
+  letter-spacing: 0.6vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-10 #container-10-1-1 h1 {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-10 #container-10-1-1 h1 {
+    font-size: 2vw;
+  }
+}
+#container-10 #container-10-1-2 {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+}
+#container-10 #container-10-1-2 p {
+  font-size: 2vw;
+  font-family: "Futura Std Medium";
+}
+@media only screen and (max-width: 1100px) {
+  #container-10 #container-10-1-2 p {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-10 #container-10-1-2 p {
+    font-size: 3vw;
+  }
+}
+#container-10 #container-10-1-3 {
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-10 #container-10-1-3 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-10 #container-10-1-3 {
+    font-size: 2.5vw;
+  }
+}
+
+.container-11 {
+  background-color: #1E201D;
+  height: auto;
+  display: flex;
+  padding: 2vw 5.44vw 2vw 5.44vw;
+}
+.container-11 #container-11-1 {
+  font-family: "Futura Std Book";
+  color: #F4CE18;
+  display: flex;
+  width: 22%;
+}
+.container-11 #container-11-1 h3 {
+  font-size: 2vw;
+}
+@media only screen and (max-width: 500px) {
+  .container-11 #container-11-1 h3 {
+    font-size: 2.1vw;
+  }
+}
+.container-11 #container-11-2 {
+  height: 5vw;
+  width: 1%;
+  background-color: #F4CE18;
+  margin-right: 1.5vw;
+}
+.container-11 #container-11-3 {
+  font-family: "Futura Std Light";
+  font-size: 1.5vw;
+  color: #fff;
+  width: 77%;
+}
+@media only screen and (max-width: 1100px) {
+  .container-11 #container-11-3 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-11 #container-11-3 {
+    font-size: 2.5vw;
+  }
+}
+
+#light {
+  background-color: #8A8A8A;
+}
+#light #container-11-3 {
+  color: #1E201D;
+  font-family: "Futura Std Book";
+}
+
+#container-12 {
+  padding-top: 1vw;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 2.5vw;
+       column-gap: 2.5vw;
+}
+#container-12 #gate-1 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic2.jpg");
+}
+#container-12 #gate-2 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic3.jpg");
+}
+#container-12 #gate-3 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic4.jpg");
+}
+#container-12 #gate-4 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic5.jpg");
+}
+#container-12 #gate-5 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic6.jpg");
+}
+#container-12 #gate-6 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic7.webp");
+}
+#container-12 #gate-7 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic8.jpg");
+}
+#container-12 #gate-8 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic9.jpg");
+}
+#container-12 #gate-9 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic10.jpg");
+}
+#container-12 #gate-10 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic11.jpg");
+}
+#container-12 #gate-11 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic12.jpg");
+}
+#container-12 #gate-12 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic13.jpg");
+}
+#container-12 #gate-13 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic14.jpg");
+}
+#container-12 #gate-14 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic15.webp");
+}
+#container-12 #gate-15 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic16.jpg");
+}
+#container-12 #gate-16 {
+  background-image: url("/assets/garden_gates/GG-Gate-Pic17.jpg");
+}
+@media only screen and (max-width: 1100px) {
+  #container-12 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-12 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+#container-13 {
+  margin-top: 5vw;
+  background-color: #1E201D;
+  height: 40vw;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 5.44vw 0 5.44vw;
+}
+#container-13 #container-13-1 {
+  height: 80%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-13 #container-13-1 {
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-13 #container-13-1 {
+    height: 50%;
+  }
+}
+#container-13 #container-13-2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+#container-13 #container-13-2 #container-13-2-1 {
+  background-color: #F4CE18;
+  height: 90%;
+  width: 2%;
+}
+#container-13 #container-13-2 #container-13-2-2 {
+  padding-left: 1.5vw;
+  border-radius: 0.55vw;
+  color: #fff;
+  font-family: "Futura Std Light";
+  font-size: 1.5vw;
+  height: 90%;
+}
+#container-13 #container-13-2 #container-13-2-2 h3 {
+  color: #F4CE18;
+  font-family: "Futura Std Book";
+  font-size: 3.5vw;
+}
+#container-13 #container-13-2 #container-13-2-2 span {
+  font-family: "Futura Std Light";
+  color: #fff;
+}
+#container-13 #container-13-2 #container-13-2-2 p {
+  padding-top: 0.5vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-13 #container-13-2 #container-13-2-2 p {
+    padding-top: 1.5vw;
+  }
+}
+#container-13 #container-13-2 #container-13-2-2 ul {
+  padding-top: 1vw;
+  padding-left: 2.5vw;
+}
+#container-13 #container-13-2 #container-13-2-2 ul li {
+  padding-left: 0px;
+  padding-bottom: 2vw;
+  color: #F4CE18;
+  font-family: "Futura Std Book";
+}
+@media only screen and (max-width: 1100px) {
+  #container-13 #container-13-2 #container-13-2-2 {
+    font-size: 2vw;
+    border-radius: 1.5vw;
+    width: 100%;
+    padding-left: 3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-13 #container-13-2 #container-13-2-2 {
+    font-size: 2.5vw;
+    padding-left: 4vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-13 {
+    height: 50vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-13 {
+    height: 72vw;
+  }
+}
+
+#container-14 {
+  width: 100%;
+  height: 20vw;
+  padding: 2vw 5.44vw 0 5.44vw;
+  display: flex;
+}
+#container-14 h3 {
+  font-family: "Futura Std Book";
+  font-size: 4vw;
+  color: #F4CE18;
+}
+#container-14 #container-14-1 {
+  width: 50%;
+  padding-right: 1vw;
+}
+#container-14 #container-14-1 p {
+  font-family: "Futura Std Book";
+  font-size: 1.5vw;
+  padding-top: 1vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-14 #container-14-1 p {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-14 #container-14-1 p {
+    font-size: 2.5vw;
+  }
+}
+#container-14 #container-14-2 {
+  height: auto;
+  width: 50%;
+  height: 100%;
+  padding-left: 1vw;
+}
+#container-14 #container-14-2 #container-14-2-1 {
+  padding-right: 5.44vw;
+  padding-left: 1vw;
+  width: 100%;
+  display: flex;
+}
+#container-14 #container-14-2 #container-14-2-2 ul {
+  padding-top: 1vw;
+  padding-left: 2.5vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 0.5vw;
+  width: 100%;
+}
+@media only screen and (max-width: 1100px) {
+  #container-14 #container-14-2 #container-14-2-2 ul {
+    row-gap: 0.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-14 #container-14-2 #container-14-2-2 ul {
+    padding-left: 6vw;
+  }
+}
+#container-14 #container-14-2 #container-14-2-2 li {
+  color: #1E201D;
+  font-size: 1.5vw;
+  font-family: "Futura Std Book";
+}
+@media only screen and (max-width: 1100px) {
+  #container-14 #container-14-2 #container-14-2-2 li {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-14 #container-14-2 #container-14-2-2 li {
+    font-size: 2.5vw;
+    font-family: "Futura Std Book";
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-14 {
+    height: 25vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-14 {
+    height: 40vw;
+  }
+}
+
+#container-15 {
+  height: auto;
+  padding: 2vw 0 4vw 0;
+  width: 100%;
+  display: flex;
+  gap: 2vw;
+}
+#container-15 h2 {
+  font-family: "Futura Std Heavy";
+  font-size: 3.5vw;
+  color: #F4CE18;
+}
+#container-15 #container-15-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  width: 50%;
+}
+#container-15 #container-15-1 #container-15-1-1 {
+  display: flex;
+  align-items: center;
+  height: 7vw;
+  width: 100%;
+  background-color: #1E201D;
+  padding-left: 5.44vw;
+}
+#container-15 #container-15-1 #container-15-1-2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  padding-left: 5.44vw;
+  padding-top: 1.5vw;
+}
+#container-15 #container-15-1 #container-15-1-2 #container-15-1-2-1 {
+  font-family: "Futura Std Book";
+  font-size: 1.5vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-15 #container-15-1 #container-15-1-2 #container-15-1-2-1 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-15 #container-15-1 #container-15-1-2 #container-15-1-2-1 {
+    font-size: 2.5vw;
+  }
+}
+#container-15 #container-15-2 {
+  height: auto;
+  width: 50%;
+  padding-right: 5.44vw;
+}
+#container-15 #container-15-2 #card {
+  height: 100%;
+  background-image: url("/assets/about_us/AU-Gate-Pic1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-15 #container-15-2 {
+    padding-right: 6.44vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-15 #container-15-2 {
+    font-size: 2.5vw;
+  }
+}
+
+#container-16 {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+#container-16 #container-16-1 {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-16 #container-16-1 {
+    gap: 5vw;
+  }
+}
+#container-16 #container-16-2 {
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-16 #container-16-2 {
+    gap: 5vw;
+  }
+}
+#container-16 .info {
+  display: flex;
+  width: 30vw;
+}
+#container-16 .info .icon {
+  height: 100%;
+  width: 5vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#container-16 .info #icon-1 {
+  background-image: url("/assets/about_us/AU-Gate-Pic2.png");
+}
+#container-16 .info #icon-2 {
+  background-image: url("/assets/about_us/AU-Gate-Pic4.png");
+}
+#container-16 .info #icon-3 {
+  background-image: url("/assets/about_us/AU-Gate-Pic3.png");
+}
+#container-16 .info #icon-4 {
+  background-image: url("/assets/about_us/AU-Gate-Pic5.png");
+}
+#container-16 .info #text {
+  font-size: 1.5vw;
+  font-family: "Futura Std Book";
+  padding-left: 1.5vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-16 .info #text {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-16 .info #text {
+    font-size: 2.5vw;
+  }
+}
+#container-16 .info #text h4 {
+  font-family: "Futura Std Bold";
+  color: #F4CE18;
+  font-size: 1.8vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-16 .info #text h4 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-16 .info #text h4 {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-16 .info {
+    width: 100%;
+    padding: 0 5.44vw 0 5.44vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-16 .info {
+    width: 100%;
+    padding: 0 5.44vw 0 5.44vw;
+  }
+}
+
+#container-17 {
+  width: 100%;
+  background-color: #1E201D;
+  height: 20vw;
+  margin-top: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5.44vw 0 5.44vw;
+}
+#container-17 h3 {
+  font-family: "Futura Std Bold";
+  color: #F4CE18;
+  font-size: 2vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-17 h3 {
+    font-size: 2.5vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-17 h3 {
+    font-size: 3vw;
+  }
+}
+#container-17 p {
+  font-family: "Futura Std Book";
+  font-size: 2vw;
+  color: #fff;
+}
+@media only screen and (max-width: 500px) {
+  #container-17 p {
+    font-size: 2.5vw;
+  }
+}
+#container-17 #container-17-1 {
+  padding: 2vw;
+  height: 100%;
+  width: 49%;
+}
+#container-17 #container-17-2 {
+  height: 80%;
+  width: 1%;
+  background-color: #F4CE18;
+}
+#container-17 #container-17-3 {
+  padding: 2vw 0 0 3vw;
+  height: 100%;
+  width: 49%;
+}
+@media only screen and (max-width: 500px) {
+  #container-17 {
+    height: 26vw;
+  }
+}
+
+#container-18 {
+  background-color: #1E201D;
+  width: 100%;
+  display: flex;
+  height: 20vw;
+  justify-content: center;
+  padding: 2.5vw 0 0 0;
+}
+#container-18 #container-18-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  gap: 1.5vw;
+}
+#container-18 #container-18-2 #container-18-2-1 {
+  color: #F4CE18;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+#container-18 #container-18-2 #container-18-2-1 h1 {
+  font-family: "Futura Std Light";
+  font-size: 1.2vw;
+  letter-spacing: 0.6vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-18 #container-18-2 #container-18-2-1 h1 {
+    font-size: 1.5vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-18 #container-18-2 #container-18-2-1 h1 {
+    font-size: 2.5vw;
+  }
+}
+#container-18 #container-18-2 #container-18-2-2 {
+  color: #fff;
+  display: flex;
+  text-align: center;
+  width: 80%;
+}
+#container-18 #container-18-2 #container-18-2-2 p {
+  font-size: 2vw;
+  font-family: "Futura Std Medium";
+}
+@media only screen and (max-width: 1100px) {
+  #container-18 #container-18-2 #container-18-2-2 p {
+    font-size: 2.3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-18 #container-18-2 #container-18-2-2 p {
+    font-size: 3.5vw;
+  }
+}
+#container-18 #container-18-2 #container-18-2-3 {
+  height: 0.25vw;
+  width: 90%;
+  background-color: #F4CE18;
+  display: flex;
+}
+#container-18 #container-18-2 #container-18-2-4 {
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+  color: #fff;
+  width: 80%;
+  text-align: center;
+}
+@media only screen and (max-width: 1100px) {
+  #container-18 #container-18-2 #container-18-2-4 {
+    font-size: 1.8vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-18 #container-18-2 #container-18-2-4 {
+    font-size: 2.5vw;
+    width: 200%;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-18 {
+    height: 25vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-18 {
+    height: 33vw;
+    padding: 4vw 5.44vw 0 5.44vw;
+  }
+}
+
+.container-19 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5.44vw;
+  padding: 2.5vw 5.44vw 0 5.44vw;
+}
+.container-19 .image {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.container-19 .card {
+  height: 44vw;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container-19 .card #images-1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  gap: 1vw;
+}
+.container-19 .card #images-1 #image-1-1 {
+  height: 100%;
+  width: 60%;
+  border-radius: 1.11vw;
+  border: 0.17vw solid #1E201D;
+  background-repeat: repeat;
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic2.jpg");
+  background-size: 86%;
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card #images-1 #image-1-1 {
+    background-size: 86%;
+    background-position: top;
+  }
+}
+.container-19 .card #images-1 #image-1-2 {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.11vw;
+  border: 0.17vw solid #1E201D;
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic3.jpg");
+  background-position: left top;
+}
+.container-19 .card #images-1 #image-1-3 {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.11vw;
+  border: 0.17vw solid #1E201D;
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic4.jpg");
+  background-position: center;
+}
+.container-19 .card #images-1 #aux {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 1vw;
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card #images-1 {
+    height: 80%;
+  }
+}
+.container-19 .card #images-2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1vw;
+}
+.container-19 .card #images-2 #image-2-1 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic5.jpg");
+}
+.container-19 .card #images-2 #image-2-2 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic6.jpg");
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card #images-2 {
+    margin-top: 1.8vw;
+  }
+}
+.container-19 .card #images-3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 1vw;
+}
+.container-19 .card #images-3 #image-3-1 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic7.jpg");
+}
+.container-19 .card #images-3 #image-3-2 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic8.jpg");
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card #images-3 {
+    margin-top: 1.8vw;
+  }
+}
+.container-19 .card .image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.11vw;
+  border: 0.17vw solid #1E201D;
+}
+.container-19 .card #image-4 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic11.jpg");
+  margin-top: 2vw;
+}
+.container-19 .card #image-5 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic14.jpg");
+}
+.container-19 .card #image-6 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic13.jpg");
+  background-position: top;
+}
+.container-19 .card #image-7 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic12.jpg");
+}
+.container-19 .card #image-8 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic10.jpg");
+  background-position: top;
+}
+.container-19 .card #image-9 {
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic9.jpg");
+  background-position: 50% 75%;
+  background-size: 100%;
+}
+.container-19 .card .text {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2vw;
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card .text {
+    margin-bottom: 0;
+  }
+}
+.container-19 .card h2 {
+  font-family: "Futura Std Heavy";
+  color: #F4CE18;
+  font-size: 3vw;
+  margin-top: 1vw;
+}
+@media only screen and (max-width: 1100px) {
+  .container-19 .card h2 {
+    font-size: 2.7vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card h2 {
+    font-size: 3.5vw;
+  }
+}
+.container-19 .card p {
+  font-family: "Futura Std Book";
+  font-size: 1.5vw;
+  margin-top: 1vw;
+}
+@media only screen and (max-width: 1100px) {
+  .container-19 .card p {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card p {
+    font-size: 2.5vw;
+  }
+}
+.container-19 .card .aux {
+  margin-top: 2vw;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: end;
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card .aux {
+    justify-content: center;
+    margin-top: 5vw;
+  }
+}
+.container-19 .card .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura Std Heavy";
+  font-size: 1.11vw;
+  width: 12.8vw;
+  height: 3.22vw;
+  border-radius: 0.6vw;
+  background-color: #F4CE18;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  .container-19 .card .button {
+    height: 3.5vw;
+    font-size: 1.7vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card .button {
+    height: 5vw;
+    font-size: 2.5vw;
+    width: 30vw;
+  }
+}
+.container-19 .card .button:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 1100px) {
+  .container-19 .card {
+    height: 47vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-19 .card {
+    height: 62vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .container-19 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#container-20 {
+  background-color: #1E201D;
+  color: #fff;
+  font-family: "Futura Std Light";
+  font-size: 1.8vw;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 3.44vw 5.44vw 3.44vw 5.44vw;
+  margin: 3vw 5.44vw 0 5.44vw;
+  border-radius: 1.11vw;
+}
+@media only screen and (max-width: 1100px) {
+  #container-20 {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-20 {
+    font-size: 2.5vw;
+  }
+}
+
+#container-21 {
+  padding-top: 1.1vw;
+}
+
+#container-22 {
+  margin-top: 2.5vw;
+  padding-top: 1.5vw;
+  padding-bottom: 2.5vw;
+  background-color: #1E201D;
+  display: flex;
+}
+#container-22 .text {
+  display: flex;
+  flex-direction: row;
+}
+#container-22 .text #text-1 {
+  width: 40%;
+  padding-right: 2vw;
+}
+#container-22 .text #text-2 {
+  width: 60%;
+}
+#container-22 .image {
+  height: 100%;
+  width: 100%;
+  border-radius: 1.11vw;
+  border: 0.17vw solid #F4CE18;
+}
+@media only screen and (max-width: 1100px) {
+  #container-22 .image {
+    margin-top: 4vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-22 .image {
+    margin-top: 12vw;
+  }
+}
+#container-22 p {
+  color: #fff;
+}
+
+@media only screen and (max-width: 1100px) {
+  #container-23 {
+    padding-top: 2vw;
+    row-gap: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-23 {
+    padding-top: 2vw;
+    row-gap: 5vw;
+  }
+  #container-23 .text {
+    margin-bottom: 2vw;
+  }
+}
+
+#container-24 {
+  height: 35vw;
+  width: 100%;
+  display: flex;
+  gap: 1.3vw;
+  padding: 2.5vw 5.44vw 0 5.44vw;
+}
+#container-24 #container-24-1 {
+  height: 100%;
+  width: 100%;
+}
+#container-24 #container-24-1 #card {
+  height: 100%;
+  background-image: url("/assets/gate_accessories/GA-Gate-Pic1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  background-position: center;
+  border-radius: 0 2vw 0 0;
+}
+@media only screen and (max-width: 500px) {
+  #container-24 #container-24-1 #card {
+    background-position: center;
+  }
+}
+#container-24 #container-24-1 #aux {
+  display: flex;
+  flex-direction: column;
+}
+#container-24 #container-24-1 #aux #new {
+  color: #F4CE18;
+  font-family: "Futura Std Extra Bold";
+  background-color: #1E201D;
+  width: 12.5vw;
+  height: 6vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 0 0 1.5vw;
+  border-radius: 0 0 4.55vw 0;
+  font-size: 3vw;
+}
+#container-24 #container-24-1 #aux #text {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  height: 100%;
+  padding: 0 0 1.11vw 1.5vw;
+  font-size: 1.5vw;
+  font-family: "Futura Std Light";
+  color: #fff;
+}
+#container-24 #container-24-1 #aux #text h3 {
+  font-size: 3vw;
+  font-family: "Futura Std Heavy";
+  color: #F4CE18;
+}
+@media only screen and (max-width: 500px) {
+  #container-24 #container-24-1 #aux #text h3 {
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  #container-24 #container-24-1 #aux #text {
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-24 #container-24-1 #aux #text {
+    font-size: 2.5vw;
+  }
+}
+#container-24 #container-24-1 #aux2 {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  padding: 0 1.5vw 1.11vw 0;
+}
+@media only screen and (max-width: 500px) {
+  #container-24 #container-24-1 #aux2 {
+    padding: 0 6vw 4vw 0;
+  }
+}
+#container-24 #container-24-1 .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Futura Std Heavy";
+  font-size: 1.5vw;
+  width: 12.8vw;
+  height: 3.22vw;
+  border-radius: 0.6vw;
+  background-color: #F4CE18;
+  cursor: pointer;
+}
+@media only screen and (max-width: 1100px) {
+  #container-24 #container-24-1 .button {
+    height: 4vw;
+    font-size: 2vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-24 #container-24-1 .button {
+    height: 6vw;
+    width: 20vw;
+    font-size: 2.5vw;
+  }
+}
+#container-24 #container-24-1 .button:hover {
+  background-color: #FEE77C;
+}
+@media only screen and (max-width: 500px) {
+  #container-24 #container-24-1 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  #container-24 {
+    flex-direction: column;
+    height: 100vw;
+    padding: 5vw 5.44vw 0 5.44vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .nav-menu {
+    position: fixed;
+    left: 200%;
+    flex-direction: column;
+    background-color: #8A8A8A;
+    width: 100%;
+    border-radius: 0.625rem;
+    text-align: center;
+    transition: 0.6s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+@media only screen and (max-width: 500px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(6px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-6px) rotate(-45deg);
+  }
+}/*# sourceMappingURL=styles.css.map */
